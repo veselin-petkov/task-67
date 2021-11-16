@@ -1,11 +1,11 @@
-@mixin shadow($x-axis: 0, $y-axis: 1px, $blur: 2px, $color: $default) {
-    box-shadow: $x-axis $y-axis $blur $color;
-  }
-  
+@mixin shadow ($elevation:backdrop){
+    $elevation:0;
+    
+}
   .box-shadow {
     width: 100px;
     height: 100px; 
     background: #333;
     margin: 50px;
-    @include shadow(5px, 5px, 5px, #333)
+    @include shadow(0);
   }
