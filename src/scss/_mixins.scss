@@ -1,0 +1,11 @@
+@mixin box-shadow($x-axis: 0, $y-axis: 1px, $blur: 2px, $color: $default) {
+    box-shadow: $x-axis $y-axis $blur $color;
+  }
+  
+  .box-shadow {
+    width: 100px;
+    height: 100px; 
+    background: #333;
+    margin: 50px;
+    @include box-shadow(5px, 5px, 5px, #333)
+  }
