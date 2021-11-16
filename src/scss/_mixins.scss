@@ -1,7 +1,8 @@
+$elevation: (width: 100px);
+
 @mixin shadow($elevation){
-    
+    box-shadow: none;
 }
-$elevation: (width: 100px,height: 100px, background: #333,margin: 50px);
 
   .box-shadow {
     width: 100px;
